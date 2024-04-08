@@ -15,10 +15,7 @@ const useHookURL = (url) => {
     };
 
     fetchData();
-
-    return () => {
-      setData();
-    };
+    
   }, [url]);
 
   return data;
