@@ -1,11 +1,11 @@
 import React from 'react';
-import useCustomHook from './hooks/useFecthCharacters';
+import useHookURL from './hooks/useFecthCharacters';
 
 import './App.css';
 
 function App() {
-  const urlPokemon = useCustomHook('https://pokeapi.co/api/v2/pokemon/1');
-  const urlRick = useCustomHook('https://rickandmortyapi.com/api/character/1');
+  const urlPokemon = useHookURL('https://pokeapi.co/api/v2/pokemon/1');
+  const urlRick = useHookURL('https://rickandmortyapi.com/api/character/1');
   
   return (
     <div>
